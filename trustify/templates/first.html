@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trustify | AI Authentication System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Trustify</div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Trust the Truth.</h1>
+        <p>AI-Based Digital Authentication & Verification System</p>
+
+        <div class="upload-box">
+            <form id="upload-form" action="/check" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <button type="submit">Verify with AI</button>
+            </form>
+            <div id="result-box"></div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Trustify | AI Digital Trust Platform</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
